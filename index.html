@@ -5,93 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculatrice_graphique</title>
     <script defer src="script.js"></script>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
   </head>
   <body class="flex items-center justify-center h-screen bg-gray-900">
     <div class="bg-gray-800 p-6 rounded-lg shadow-xl w72">
       <h1 class="text-2xl text-cyan-200 font-bold text-center mb-4">Calculatrice</h1>
       
        
-          <div class="bg-gray-900  text-rigth text-white text-3xl p-4 mb-4 rounded-md h-16 flex items-center justify-end shadow-inner"></div>
+      <div class="bg-indigo-400  text-right text-white text-3xl p-4 mb-4 rounded-sm h-16 flex items-center justify-end shadow-inner"></div>
           <div class="grid grid-cols-4 gap-2">
             <input
             type="button"
             value="7"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-sky-300 rounded-sm text-white"
+            class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
           />
           <input
             type="button"
             value="8"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-cyan-200 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
           />
           <input
             type="button"
             value="9"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
           />
           <input
             type="button"
             value="C"
-            class="bg-pink-500 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-pink-500 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-2xl"
           />
           <input
             type="button"
             value="4"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
           />
           <input
             type="button"
             value="5"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
           />
           <input
             type="button"
             value="6"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
           />
           <input
             type="button"
             value="+"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-indigo-400 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white font-bold text-2xl"
           />
           <input
             type="button"
             value="1"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
           />
           <input
             type="button"
             value="2"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
           />
           <input
             type="button"
             value="3"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
           />
+
           <input
-            type="button"
-            value="="
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
-          />
+          type="button"
+          value="/"
+          class="bg-indigo-400 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white font-bold text-2xl"
+        />
+          
           <input
           type="button"
           value="0"
-          class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+          class="bg-sky-500/50 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-xl"
         />
           <input
             type="button"
             value="."
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
+            class="bg-indigo-400 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white font-bold text-2xl"
           />
           <input
             type="button"
             value="-"
-            class="bg-sky-500/50 h-14 w-14 border-1 border-indigo-600 hover:bg-indigo-400 rounded-sm text-white"
-          /></div>
+            class="bg-indigo-400 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white font-bold text-2xl"
+          />
+          <input
+            type="button"
+            value="="
+            class="bg-pink-800 h-14 w-14 hover:bg-cyan-200 hover:text-black active:translate-y-0.5 rounded-sm text-white text-2xl"
+          />
+          
+        </div>
             
           </div>
-        </div>
+        
       
     </div>
   </body>
