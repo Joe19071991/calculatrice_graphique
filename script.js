@@ -19,5 +19,14 @@ const gererTouches = function (event) {
     affichage =
       affichage === "" ? touche.toString() : affichage + touche.toString();
     ecranElt.innerHTML = affichage;
+  } else {
+    switch (touche) {
+      case "C":
+        precedent = 0;
+        affichage = "";
+        operation = null;
+        ecranElt.innerText = 0;
+        break;
+    }
   }
 };
