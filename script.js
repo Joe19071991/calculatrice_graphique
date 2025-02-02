@@ -27,6 +27,28 @@ const gererTouches = function (event) {
         operation = null;
         ecranElt.innerText = 0;
         break;
+
+      case "+":
+      case "-":
+      case "*":
+      case "/":
+        precedent =
+          precedent === 0
+            ? parseFloat(affichage)
+            : calculer(precedent, parseFloat(affichage), operation);
+        ecranElt.innerText = precedent;
+        operation = touche;
+        affichage = "";
+        break;
     }
   }
 };
+
+function calculer(nb1, nb2, operation) {
+  nb1 = parseFloat(nb1);
+  nb2 = parseFloat(nb2);
+  if (operation === "+") return nb1 + nb2;
+  if (operation === "-") return nb1 - nb2;
+  if (operation === "*") return nb1 * nb2;
+  if (operation === "/") return nb1 / nb2;
+}
