@@ -40,6 +40,15 @@ const gererTouches = function (event) {
         operation = touche;
         affichage = "";
         break;
+      case "=":
+        precedent =
+          precedent === 0
+            ? parseFloat(affichage)
+            : calculer(precedent, parseFloat(affichage), operation);
+        ecranElt.innerText = precedent;
+        affichage = precedent;
+        precedent = 0;
+        break;
     }
   }
 };
