@@ -16,7 +16,8 @@ const gererTouches = function (event) {
   let touche = event.target.value;
 
   if (parseFloat(touche) >= 0 || touche === ".") {
-    affichage = touche;
+    affichage =
+      affichage === "" ? touche.toString() : affichage + touche.toString();
     ecranElt.innerHTML = affichage;
   }
 };
